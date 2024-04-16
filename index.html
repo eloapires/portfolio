@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,14 +14,14 @@
     <header class="header">
         <a href="#" class="logo">Portfólio</a>
 
-        
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Serviços</a>
-            <a href="#">Portfólio</a>
-            <a href="#">Contato</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contact">Contato</a>
         </nav>
     </header>
 
@@ -30,7 +30,7 @@
         <div class="home-content">
             <h3>Olá, Prazer! Eu sou</h3>
             <h1>Eloá Pires</h1>
-            <h3>Sou também uma <span>Desenvolvedora Web</span></h3>
+            <h3>Sou também uma <span class="multiple-text"></span></h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
             <div class="social-media">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -45,7 +45,7 @@
 
     <!--SEÇÃO SOBRE-->
     <section class="about" id="about">
-        <div class="about.img">
+        <div class="about-img">
             <img src="img/aboutpic.jpg" alt="">
         </div>
 
@@ -85,8 +85,11 @@
         </div>
     </section>
 
-    <!--SEÇÃO SERVIÇOS-->
+    <!--SEÇÃO PORTFOLIO-->
     <section class="portfolio" id="portfolio">
+        <h2 class="heading"> Últimos <span>Projetos</span></h2>
+
+        <div class="portfolio-container">
         <div class="portfolio-box">
             <img src="img/imagem 1.jpg" alt="">
             <div class="portfolio-layer">
@@ -95,6 +98,7 @@
                 <i class="fa-solid fa-up-right-from-square"></i>
             </div>
         </div>
+    
 
         <div class="portfolio-box">
             <img src="img/imagem 2.jpg" alt="">
@@ -172,6 +176,10 @@
              <i class="fa-solid fa-angle-up"></i></a>
          </div>
      </footer>
+
+     <script src="https://unpkg.com/scrollreveal"></script>
+
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script src="js/main.js"></script>
 </body>
