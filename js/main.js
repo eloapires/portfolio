@@ -50,9 +50,10 @@ ScrollReveal().reveal('.home-contact h1, .about-img', {origin:'left'});
 ScrollReveal().reveal('.home-contact p, .about-content', {origin:'right'});
 
 const typed = new Typed('.multiple-text', {
-    strings:['Desenvolvedor Web', 'Web Designer','Youtuber'],
+    strings:['Desenvolvedora Web', 'Web Designer','Youtuber'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
     loop: true
 })
+

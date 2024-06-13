@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,31 +9,34 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: "Nunito", sans-serif;
+
 }
 
-:root{
+:root {
     --bg-color: #191f36;
-    --snd-bg-color: #262B40;
+    --snd-bf-color: #262B40;
     --text-color: #fff;
     --main-color: #59B2F4;
 }
 
-html{
+html {
     font-size: 62,5%;
     /*overflow: hidden;*/
+
 }
 
-body{
+body {
     background: var(--bg-color);
     color: var(--text-color);
+    
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -46,9 +49,9 @@ section{
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 2.5rem;
-    color:var(--text-color);
+    color: var(--text-color);
     font-weight: 700;
     cursor: default;
 }
@@ -57,7 +60,7 @@ section{
     font-size: 1.5rem;
     color: var(--text-color);
     margin-left: 4rem;
-    font-weight: 700;
+    font-weight:700;
 }
 
 .navbar a:hover,
@@ -77,7 +80,7 @@ section{
     align-items: center;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
 }
@@ -86,7 +89,7 @@ section{
     margin-bottom: 2rem;
 }
 
-span{
+span {
     color: var(--main-color);
 }
 
@@ -96,25 +99,26 @@ span{
     line-height: 1.3;
 }
 
-.home-img img{
+.home-img img {
     width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
 }
 
-@keyframes floatImage{
+@keyframes floatImage {
     0%{
         transform: translateY(0);
     }
     50%{
         transform: translateY(-2.4rem);
+        }
+        100%{
+            transform: translateY(0);
+        }
     }
-    100%{
-        transform: translateY(0);
-    }
-}
+
 
 .home-content p{
-    font-size: 1.6rem;
+    font-size:1.6rem;
 }
 
 .social-media a{
@@ -129,12 +133,12 @@ span{
     font-size: 2rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
-    transition: .5s ease; 
+    transition: .5s ease;
 }
 
 .social-media a:hover {
     background: var(--main-color);
-    color: var(--snd-bg-color);
+    color: var(--snd-bf-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
 
@@ -155,12 +159,12 @@ span{
     box-shadow: none;
 }
 
-.about {
+.about{
     display: flex;
     justify-items: center;
     align-items: center;
     gap: 2rem;
-    background: var(--snd-bg-color);
+    background: var(--snd-bf-color);
 }
 
 .about-img img {
@@ -190,7 +194,7 @@ span{
     margin-bottom: 5rem;
 }
 
-.services-container {
+.services-container  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,12 +204,13 @@ span{
 
 .services-container .services-box {
     flex: 1 1 30rem;
-    background: var(--snd-bg-color);
+    background: var(--snd-bf-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+
 }
 
 .services-container .services-box:hover {
@@ -214,12 +219,12 @@ span{
 }
 
 .services-box i {
-    font-size: 6rem;
+    font-size: 7rem;
     color: var(--main-color);
 }
 
 .services-box h3 {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
 }
 
 .services-box p {
@@ -227,11 +232,11 @@ span{
     margin: 1rem 0 3rem;
 }
 
-.portfolio{
-    background: var(--snd-bg-color);
+.portfolio {
+    background: var(--snd-bf-color)
 }
 
-.portfolio H2{
+.portfolio H2 {
     margin-bottom: 4rem;
 }
 
@@ -300,11 +305,6 @@ span{
     border-radius: 50%;
 }
 
-.portfolio-layer a i {
-    font-size: 2rem;
-    color:  var(--snd-bg-color);
-}
-
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -328,7 +328,7 @@ span{
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--snd-bg-color);    
+    background: var(--snd-bf-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -337,7 +337,7 @@ span{
     width: 49%;
 }
 
-.contact form textarea{
+.contact form textarea {
     resize: none;
 }
 
@@ -352,7 +352,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--snd-bg-color);
+    background: var(--snd-bf-color);
 }
 
 .footer-text {
@@ -366,7 +366,7 @@ span{
     padding: .8rem 1rem;
     background: var(--main-color);
     border-radius: .8rem;
-    transition: .5s ease;
+    transition: .5s ease
 }
 
 .footer-iconTop a:hover {
@@ -375,33 +375,31 @@ span{
 
 .footer-iconTop a i {
     font-size: 2.4rem;
-    color: var(--snd-bg-color);
+    color: var(--snd-bf-color)
 }
 
 /* BREAKPOINT */
 @media (max-width: 1200px) {
-    html {
+    html{
         font-size: 55%;
     }
 }
 
-@media (max-width: 991px){
-    .header{
+@media (max-width: 991px) {
+    .header {
         padding: 2rem 3%;
     }
-
-    section {
+    .section {
         padding: 10rem 3%;
     }
 
-    .services{
+    .services {
         padding: 7rem;
     }
 
     .portfolio {
         padding-bottom: 7rem;
     }
-
     .contact {
         min-height: auto;
     }
@@ -412,7 +410,7 @@ span{
 }
 
 @media (max-width: 768px) {
-    #menu-icon {
+    menu-icon {
         display: block;
     }
 
@@ -431,53 +429,50 @@ span{
     .navbar.active {
         display: block;
     }
-
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
-
-    .home{
+    
+    .home {
         flex-direction: column;
     }
 
-    .home-content h1{
+    .home-content h1 {
         font-size: 5rem;
     }
 
-    .home-content h3{
+    .home-content h3 {
         font-size: 2.6rem;
     }
-
-    .home-content{
+    .home-content {
         order: 2;
     }
 
     .home-img img {
         width: 70vw;
         margin-top: 4rem;
-    }
+}
 
-    .about {
-        flex-direction: column;
-    }
+.about {
+    flex-direction: column;
+}
 
-    .about-img img {
-        width: 90vw;
-        margin-top: 4rem;
-    }
-    .services h2{
-        margin-bottom: 3rem;
-    }
+.about-img img {
+    width: 90vw;
+    margin-top: 4rem;
+}
+.services h2 {
+    margin-bottom: 3rem;
+}
 
-    .portfolio h2{
-        margin-bottom: 3rem;
-    }
+.portfolio h2 {
+    margin-bottom: 3rem;
+}
 
-    .portfolio-container {
-        grid-template-columns: repeat(2,1fr);
-    }
+.portfolio-container {
+    grid-template-columns: repeat(2,1fr);
 }
 
 @media (max-width: 617px) {
@@ -504,8 +499,4 @@ span{
     .contact form .input-box input {
         width:  100%;
     }
-}
-
-h4 {
-    color: white;
 }
